@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">{{ page.title }}</h1>
+      {% include breadcrumb.html lang=page.lang %}
+    </div>
+  </div>
+</header>
+
+<main>
+  <article class="timeline-view">
+    {{ content }}
+  </article>
+  {% include related-pages.html related_pages=page.related_pages %}
+</main>

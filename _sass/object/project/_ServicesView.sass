@@ -1,0 +1,70 @@
+$MARGIN_PANEL: 2rem
+
+#ServicesView
+  padding-top: 2.5rem
+  position: relative
+  > .appearance-switch
+    font-size: 1.8rem
+    position: absolute
+    display: block
+    top: -.5rem
+    right: $PADDING_BASE
+  > .tagging-list-view
+    list-style: none
+    position: relative
+    transition: margin $DURATION_GUI
+    > .service
+      transition: margin $DURATION_GUI, padding $DURATION_GUI, width $DURATION_GUI
+      > .upper
+        > .title
+          position: relative
+          margin-bottom: .6rem
+        > .tag-list-view
+          margin: 0 -.2rem .8rem
+          > .tag-view
+            display: inline-block
+      > .description
+        font-size: 1.2rem
+        line-height: 1.4
+      > .links
+        position: absolute
+        right: 1.2rem
+        > ul
+          text-align: right
+          > li
+            display: inline-block
+            + li
+              margin-left: 1rem
+  &[data-appearance-type="list"]
+    > .tagging-list-view
+      > .service
+        > .upper
+          > *
+            display: inline-block
+            vertical-align: middle
+          > .tag-list-view
+            margin-left: 1rem
+        > .links
+          top: 1rem
+  &[data-appearance-type="panel"]
+    > .tagging-list-view
+      flex-wrap: wrap
+      flex-direction: row
+      margin-right: -2rem
+      > .service
+        margin: 0 $MARGIN_PANEL $MARGIN_PANEL 0
+        padding: 1.6rem 1.6rem 3.2rem
+        width: calc( 100% / 3 - #{$MARGIN_PANEL} )
+        > .links
+          bottom: 1rem
+
+@media screen and (max-width: $WIDTH_SP)
+  #ServicesView
+    padding-top: 0
+    > .appearance-switch
+      display: none
+    > .tagging-list-view
+      margin-right: 0 !important
+      > .service
+        margin: 0 0 .4rem !important
+        width: 100% !important

@@ -1,0 +1,165 @@
+items:
+  - date: 2023-1-1
+    title:
+      en: FY2023
+      ja: 2023年度
+    report_url:
+      en: https://drive.google.com/file/d/1bxG4XQumO54qaLIWummQLm81YbJtAvNT/view?usp=drive_link
+      ja: https://drive.google.com/file/d/1bxG4XQumO54qaLIWummQLm81YbJtAvNT/view?usp=drive_link
+    budget_pdf:
+      en: https://drive.google.com/file/d/1c3cXByTIz1lKHzdlD_LEVWCDLyK9vqzU/view?usp=drive_link
+      ja: https://drive.google.com/file/d/1c3cXByTIz1lKHzdlD_LEVWCDLyK9vqzU/view?usp=drive_link
+    budget_excel:
+      en: https://docs.google.com/spreadsheets/d/1i9P1Udau7pVNE70ZBDOs8u4CSf4cYFTj/edit?usp=drive_link&ouid=105751513362338066062&rtpof=true&sd=true
+      ja: https://docs.google.com/spreadsheets/d/1i9P1Udau7pVNE70ZBDOs8u4CSf4cYFTj/edit?usp=drive_link&ouid=105751513362338066062&rtpof=true&sd=true
+  - date: 2022-1-1
+    title:
+      en: FY2022
+      ja: 2022年度
+    report_url:
+      en: https://drive.google.com/file/d/1CjXP0_6g-rQHLrJiOfSqnNl6cyozhi57/view?usp=drive_link
+      ja: https://drive.google.com/file/d/1CjXP0_6g-rQHLrJiOfSqnNl6cyozhi57/view?usp=drive_link
+    budget_pdf:
+      en: https://drive.google.com/file/d/1evhz6-n93IXuPlQCYO3Fankayy2-p4MZ/view?usp=share_link
+      ja: https://drive.google.com/file/d/1evhz6-n93IXuPlQCYO3Fankayy2-p4MZ/view?usp=share_link
+    budget_excel:
+      en: https://docs.google.com/spreadsheets/d/1tC5xdi-SzrDa8fIukWRofw66DYXdbKa-/edit?usp=share_link&ouid=105751513362338066062&rtpof=true&sd=true
+      ja: https://docs.google.com/spreadsheets/d/1tC5xdi-SzrDa8fIukWRofw66DYXdbKa-/edit?usp=share_link&ouid=105751513362338066062&rtpof=true&sd=true
+  - date: 2021-1-1
+    title:
+      en: FY2021
+      ja: 2021年度
+    report_url:
+      en: https://drive.google.com/file/d/1CBNKp-3qSRtlQUkrmET3P8p9T6RrsvyA/view?usp=sharing
+      ja: https://drive.google.com/file/d/1CBNKp-3qSRtlQUkrmET3P8p9T6RrsvyA/view?usp=sharing
+    budget_pdf:
+      en: https://drive.google.com/file/d/1y-K6cZlTYohw3-NOEDBE8PD3LETrPv8Z/view?usp=sharing
+      ja: https://drive.google.com/file/d/1y-K6cZlTYohw3-NOEDBE8PD3LETrPv8Z/view?usp=sharing
+    budget_excel:
+      en: https://docs.google.com/spreadsheets/d/169oQ01py_ZaMSnqnyt3PcvNWDyW7qj5n/edit?usp=sharing&ouid=105751513362338066062&rtpof=true&sd=true
+      ja: https://docs.google.com/spreadsheets/d/169oQ01py_ZaMSnqnyt3PcvNWDyW7qj5n/edit?usp=sharing&ouid=105751513362338066062&rtpof=true&sd=true
+  - date: 2020-1-1
+    title:
+      en: FY2020
+      ja: 2020年度
+    report_url:
+      en: https://drive.google.com/file/d/1ZVshrucuj9GLgho4heOYN-AGg2XIXr8h/view?usp=sharing
+      ja: https://drive.google.com/file/d/1ZVshrucuj9GLgho4heOYN-AGg2XIXr8h/view?usp=sharing
+    budget_pdf:
+      en: https://drive.google.com/file/d/1lB0iyPuqkWR3UNieJ21k9QoGUXJ2w2J7/view?usp=sharing
+      ja: https://drive.google.com/file/d/1lB0iyPuqkWR3UNieJ21k9QoGUXJ2w2J7/view?usp=sharing
+    budget_excel:
+      en: https://drive.google.com/file/d/1kjs_XpooP2HjSWQpSPW0RyZmf65F8a6a/view?usp=sharing
+      ja: https://drive.google.com/file/d/1kjs_XpooP2HjSWQpSPW0RyZmf65F8a6a/view?usp=sharing
+    category: annual_report
+  - date: 2019-1-1
+    title:
+      en: FY2019
+      ja: 2019年度
+    report_url:
+      en: https://drive.google.com/file/d/1II3o6P4FmkVYabfJtrcKsEzg1iJsKntg
+      ja: https://drive.google.com/file/d/1II3o6P4FmkVYabfJtrcKsEzg1iJsKntg
+    budget_pdf:
+      en: https://drive.google.com/file/d/1l2uAohGHdAoFcdTVTiPi-3uk-bW1kYRz
+      ja: https://drive.google.com/file/d/1l2uAohGHdAoFcdTVTiPi-3uk-bW1kYRz
+    budget_excel:
+      en: https://drive.google.com/file/d/1wWWAG3aVhZ7zESQxRZk3Lj9Ne9Fh7RBr
+      ja: https://drive.google.com/file/d/1wWWAG3aVhZ7zESQxRZk3Lj9Ne9Fh7RBr
+    category: annual_report
+  - date: 2018-1-1
+    title:
+      en: FY2018
+      ja: 2018年度
+    report_url:
+      en: https://drive.google.com/file/d/1S4m0dkdwQjKtRBiAZjBgdKW-ZjZdMQPs/
+      ja: https://drive.google.com/file/d/1S4m0dkdwQjKtRBiAZjBgdKW-ZjZdMQPs/
+    budget_pdf:
+      en: https://drive.google.com/file/d/1rlzRxuTPqARhr-cKimaEF2CYRe887z7V/
+      ja: https://drive.google.com/file/d/1rlzRxuTPqARhr-cKimaEF2CYRe887z7V/
+    budget_excel:
+      en: https://drive.google.com/file/d/1oJqUbz_n23mWlW3YawhDvKW7ArPp68e-/
+      ja: https://drive.google.com/file/d/1oJqUbz_n23mWlW3YawhDvKW7ArPp68e-/
+    self_evaluation:
+      en: https://drive.google.com/file/d/17LUdcT47zy7OSO3uSwWZoN_BCiu1R-zb
+      ja: https://drive.google.com/file/d/17LUdcT47zy7OSO3uSwWZoN_BCiu1R-zb
+    category: annual_report
+  - date: 2017-1-1
+    title:
+      en: FY2017
+      ja: 2017年度
+    report_url:
+      en: https://drive.google.com/file/d/1Sx_XNqebCdjskbmCFmvZZB_YC5AVnamg/edit
+      ja: https://drive.google.com/file/d/1Sx_XNqebCdjskbmCFmvZZB_YC5AVnamg/edit
+    budget_pdf:
+      en: https://drive.google.com/file/d/15nggfQoRjN0yixs87pLQ-vekBmzFAigT/edit
+      ja: https://drive.google.com/file/d/15nggfQoRjN0yixs87pLQ-vekBmzFAigT/edit
+    budget_excel:
+      en: https://drive.google.com/file/d/1V8mIaKQE1G6Lcp0DYGesBJIl2Bt2aZoW/edit
+      ja: https://drive.google.com/file/d/1V8mIaKQE1G6Lcp0DYGesBJIl2Bt2aZoW/edit
+    category: annual_report
+  - date: 2016-1-1
+    title:
+      en: FY2016
+      ja: 2016年度
+    report_url:
+      en: https://drive.google.com/file/d/1UA1mm1vIyDja9FexDnULEdNsMOBYTwhB/edit
+      ja: https://drive.google.com/file/d/1UA1mm1vIyDja9FexDnULEdNsMOBYTwhB/edit
+  - date: 2015-1-1
+    title:
+      en: FY2015
+      ja: 2015年度
+    report_url:
+      en: https://drive.google.com/file/d/1CVAlhIMtMXx-ccKkmS-qrhE8DZntoB09/edit
+      ja: https://drive.google.com/file/d/1CVAlhIMtMXx-ccKkmS-qrhE8DZntoB09/edit
+  - date: 2014-1-1
+    title:
+      en: FY2014
+      ja: 2014年度
+    report_url:
+      en: https://drive.google.com/file/d/1WOU4lb5WXAKqKQVslcxFQZrBoXXn_FoB/edit
+      ja: https://drive.google.com/file/d/1WOU4lb5WXAKqKQVslcxFQZrBoXXn_FoB/edit
+  - date: 2013-1-1
+    title:
+      en: FY2013
+      ja: 2013年度
+    report_url:
+      en: https://drive.google.com/file/d/1Cc7hZkVUnLNZUZYHnnFTQ8P-wKPasBOB/edit
+      ja: https://drive.google.com/file/d/1Cc7hZkVUnLNZUZYHnnFTQ8P-wKPasBOB/edit
+  - date: 2012-1-1
+    title:
+      en: FY2012
+      ja: 2012年度
+    report_url:
+      en: https://drive.google.com/file/d/1uYjCKyLDuGPD0QLzqnVMb1qxrE5997Jp/edit
+      ja: https://drive.google.com/file/d/1uYjCKyLDuGPD0QLzqnVMb1qxrE5997Jp/edit
+  - date: 2011-1-1
+    title:
+      en: FY2011
+      ja: 2011年度
+    report_url:
+      en: https://drive.google.com/file/d/17iwNrg_nUbcADGnpUY7cNuj29KVQQezm/edit
+      ja: https://drive.google.com/file/d/17iwNrg_nUbcADGnpUY7cNuj29KVQQezm/edit
+  - date: 2010-1-1
+    title:
+      en: FY2010
+      ja: 2010年度
+    report_url:
+      en: https://drive.google.com/file/d/1ftlSLmWbBd_VQ-MRHCpO6PTQ9gQJTa4x/edit
+      ja: https://drive.google.com/file/d/1ftlSLmWbBd_VQ-MRHCpO6PTQ9gQJTa4x/edit
+
+dictionary:
+  tag:
+    en: Annual report
+    ja: 年次報告書
+  report_url:
+    en: Annual Report
+    ja: 年次報告
+  budget_pdf:
+    en: Budget (PDF)
+    ja: 予算内訳（PDF）
+  budget_excel:
+    en: Budget (Excel)
+    ja: 予算内訳（エクセル）
+  self_evaluation:
+    en: Self evaluation report
+    ja: 自己評価報告

@@ -1,0 +1,83 @@
+---
+layout: default
+---
+<div id="TopPageView">
+  <div class="inner">
+
+    <section class="maincolumn">
+
+      <header data-category="{{ page.category }}">
+        {% if page.category == 'top' %}
+        <h1 class="logotype">{{ page.title }}</h1>
+        {% else %}
+        <h1 class="title">{{ page.title }}</h1>
+        {% endif %}
+        <div class="description">{{ page.description }}</div>
+      </header>
+
+      {% include tab-menu.html %}
+
+      {% if page.category != 'top' %}
+      {% include breadcrumb.html lang=page.lang %}
+      {% endif %}
+
+      <main class="md-content">
+        {{ content }}
+      </main>
+
+      <ul class="panel-view-container">
+        {% for panel in page.panels %}
+        <li class="panel">
+          <a href="{{ panel.url }}">
+            <h2 class="title">
+              <img src="{{ panel.icon }}"/>
+              <span>{{ panel.title }}</span>
+            </h2>
+            <p class="description">{{ panel.description }}</p>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+
+    </section>
+
+    {% assign news = site.news 
+      | where: 'lang', page.lang 
+      | where_exp: 'news', 'news.db contains page.category' 
+      | where_exp: 'news', 'news.retire_time > site.time' 
+      | sort: 'date' 
+      | reverse %}
+    {% unless news.size == 0 %}
+    <aside class="pickup-news-view">
+      <div class="container">
+        <h2 class="title">NEWS</h2>
+        <ul class="list">
+          {% if page.category == 'top' %}
+            {% assign url_vars = '' %}
+          {% else %}
+            {% capture url_vars %}?tag={{ page.category }}{% endcapture %}
+          {% endif %}
+          {% if page.lang == 'en' %}
+            {% assign page_name = 'index-e.html' %}
+          {% else %}
+            {% assign page_name = 'index.html' %}
+          {% endif %}
+          {% for article in news limit:5 %}
+          <li class="item">
+            <article class="news{% if article.priority %} priority{% endif %}">
+              <a href="{{ site.baseurl }}{{ article.url }}">
+                <h3 class="title">{{ article.title }}</h3>
+                {% include tags.html lang=page.lang date=article.date tags=article.tags dbs=article.db %}
+              </a>
+            </article>
+          </li>
+          {% endfor %}
+        </ul>
+        <a class="arrowed-link" href="{{ site.baseurl }}/news/{{ page.lang }}/{{ page_name }}{{ url_vars }}">more</a>
+      </div>
+    </aside>
+    {% endunless %}
+
+  </div>
+</div>
+

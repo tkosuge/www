@@ -1,0 +1,14 @@
+#PageHeader
+  background-color: white
+  > .inner
+    +inner
+    padding: 2.7rem 4rem 2rem
+    > .tab-menu-view
+      margin-top: 1.4rem
+
+@media screen and (max-width: $WIDTH_SP)
+  #PageHeader
+    > .inner
+      +inner-sp
+      > .tab-menu-view
+        margin: 0 #{-$PADDING_SP_SIDE} 0

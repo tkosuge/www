@@ -1,0 +1,582 @@
+$MARGIN_BOTTOM: 1rem
+
+.md-content
+  font-size: 1.4rem
+  line-height: 1.5
+  .highlight
+    overflow: auto
+  a
+    &[href^="http"],&[href^="//"]
+      &:after
+        content: ''
+        background-image: url(../images/parts/external_link.png)
+        background-repeat: no-repeat
+        width: 1.6rem
+        height: 1.6rem
+        margin: 0 .4rem
+        display: inline-block
+        background-size: 1.4rem
+        vertical-align: middle
+    &[href*="ddbj.nig.ac.jp"],&[href*="youtu.be"],&[href*="youtube.com"],&[href*="slideshare.net"],&[href*="drive.google.com"],&.withoutpseudoelement
+      &:after
+        display: none
+  .group1
+    text-decoration: none
+  img
+    width: auto
+  .w40
+    width: 4rem
+  .w200
+    width: 20rem
+  .w250
+    width: 25rem
+  .w300
+    width: 30rem
+  .w320
+    width: 32rem
+  .w400
+    width: 40rem
+  .w450
+    width: 45rem
+  .w500
+    width: 50rem
+  .w550
+    width: 55rem
+  .w600
+    width: 60rem
+  .w630
+    width: 63rem
+  .w650
+    width: 65rem
+  .pdf
+    width: 2.5rem
+    height: 2.5rem
+  > p, > table, > ol, > ul, > dl, > figure, > .highlighter-rouge
+    margin-bottom: $MARGIN_BOTTOM
+  .red
+    color: $COLOR_RED
+    *
+      color: $COLOR_RED
+  .blue
+    color: $COLOR_BLUE
+  .conditionally_required
+    color: $COLOR_GREEN
+  h2
+    font-size: 2.6rem
+    line-height: 1.2
+    margin-top: 2.4rem
+    margin-bottom: 1.5rem
+    border-left: solid .6rem $COLOR_KEY
+    padding-left: .9rem
+    [data-category="sc"] &
+      border-left-color: $COLOR_SC_KEY
+  h3
+    border-bottom: .2rem solid $COLOR_KEY_PALE
+    [data-category="sc"] &
+      border-bottom-color: $COLOR_SC_KEY_PALE
+    font-size: 2.2rem
+    margin: 1.4rem 0
+  h4
+    border-bottom: .1rem solid $COLOR_KEY_PALE
+    [data-category="sc"] &
+      border-bottom-color: $COLOR_SC_KEY_PALE
+    font-size: 1.8rem
+    margin: 1.0rem 0
+  h2,h3
+    cursor: pointer
+    &:hover > .link-icon
+      display: inline-block 
+  .link-icon
+    background-image: url(/assets/images/parts/link.png)
+    background-repeat: no-repeat
+    background-size: contain
+    display: none
+    width: 1.2rem
+    height: 1.2rem
+    margin: 0 .3rem
+
+  ul
+    li
+      padding: .4rem 0
+      line-height: 1.6
+      margin-left: 2rem
+      & .title
+        font-weight: bold
+
+  ol
+    counter-reset: my-counter
+    list-style: none
+    padding: 0
+    li
+      margin-bottom: 1rem
+      padding-left: 2.9rem
+      position: relative
+      &:before
+        content: counter(my-counter)
+        counter-increment: my-counter
+        color: $COLOR_BLACK
+        display: block
+        line-height: 2rem
+        margin-left: -2.6rem
+        text-align: center
+        height: 2rem
+        width: 2rem
+        position: absolute
+        top: .2rem
+        left: 2.8rem
+      &.decrement
+        &:before
+          counter-increment: my-counter +0
+      ul
+        li
+          padding-left: 0
+          &:before
+            content: none
+
+  dl
+    line-height: 1.4
+    dt, dd
+      padding: .6rem 0
+    dt
+      font-weight: bold
+    dd
+      img
+        margin-bottom: .2rem
+    + dt
+      margin-top: 1rem
+    dd * 
+      margin-bottom: 1rem
+  .dl-list
+    margin-bottom: 2rem
+    dt
+      float: left
+    dd
+      margin-left: 8.5rem
+
+  caption,figcaption,.tablecaption
+    caption-side: bottom
+    font-size: 1.2rem
+    color: #666
+    text-align: left
+    line-height: initial
+  caption,figcaption
+    margin-top: .5rem
+  .tablecaption
+    margin-bottom: .5rem
+    display: block
+  table
+    // width: 100%
+    border: .1rem solid $COLOR_GRAY
+    line-height: 1.2
+    font-size: 1.2rem
+    thead
+      tr
+        th
+          border-bottom: .1rem solid $COLOR_GRAY
+    tr
+      &.separatorline
+        background-color: $COLOR_GRAY
+        color: white
+        font-weight: bold
+      th
+        text-align: left
+        font-weight: bold
+        white-space: nowrap
+      td, th
+        padding: .6rem .6rem .6rem .6rem
+        border-bottom: .1rem solid $COLOR_GRAY
+        vertical-align: middle
+        &.borderbtm
+          border-bottom: .1rem solid $COLOR_GRAY
+        &.borderbtm-sep
+          border-bottom: .1rem solid $COLOR_GRAY
+        &.borderrgt
+          border-right: .1rem solid $COLOR_GRAY
+      &:last-child
+        > td, th
+          border-bottom: .1rem solid $COLOR_GRAY
+    + table
+      margin-top: -$MARGIN_BOTTOM - 0.1rem
+
+  code, pre
+    background-color: $COLOR_LIGHT_VERY_PALE
+    color: black
+    font-size: 1.2rem
+    line-height: 1.6
+    font-family: 'courier', monospace
+    [data-category="sc"] &
+      background-color: $COLOR_SC_KEY_VERY_PALE
+  pre
+    padding: .3rem .6rem
+    display: inline-block
+    margin-bottom: 1rem
+  code
+    white-space: break-spaces
+
+    
+  .attention
+    background-color: $COLOR_KEY_VERY_PALE
+    padding: 1rem 1.6rem
+    border-left: .6rem solid $COLOR_KEY_PALE
+    margin-bottom: 1.6rem
+    [data-category="sc"] &
+      background-color: $COLOR_SC_KEY_VERY_PALE
+      border-left-color: $COLOR_SC_KEY_PALE
+
+  .toggle-content-btn
+    display: flex
+    align-items: center
+    cursor: pointer
+    a
+      text-decoration: none
+      position: relative
+    &::after
+      content: ""
+      display: inline-block
+      width: .4rem
+      height: .4rem
+      margin-left: .5rem
+      margin-right: -.5rem
+      border-top: .2rem solid $COLOR_KEY
+      border-right: .2rem solid $COLOR_KEY
+      transform: translateY(-35%) rotate(135deg)
+      [data-category="sc"] &
+        border-top-color: $COLOR_SC_KEY
+        border-right-color: $COLOR_SC_KEY
+    &.active
+      &::after
+        transform: rotate(315deg)
+
+  .accordion-menu div.accordion-content
+    margin: 0
+    display: none
+
+  .close-content-btn
+    text-align: right
+    display: block
+
+  .float-left
+    float: left
+    width: 48%
+
+  .float-right
+    float: right
+    width: 48%
+    img
+      width: 100%
+      
+  .float-release
+    clear: both
+
+  .text-align-end
+    text-align: end
+
+  .feeds
+    img
+      height: 2rem
+      vertical-align: text-bottom
+      margin-right: .2rem
+
+  .start-button
+    text-align: center
+    padding: .5rem 2rem .5rem .5rem
+    margin: 2rem 2rem
+    background-color: $COLOR_KEY_PALE
+    [data-category="sc"] &
+      background-color: $COLOR_SC_KEY_PALE
+
+  .nsss-menu
+    display: flex
+    .nsss-icon
+      width: 10rem
+      text-align: center
+      img
+        width: 3.5rem
+        height: auto
+
+  .db-top-navi-box
+    img
+      width: 3.5rem
+      height: auto
+      display: inline-block
+      opacity: .9
+      transition: opacity .1s linear 0s
+  
+  .pdficon
+    width: 2.4rem
+    height: 2.4rem
+    vertical-align: middle
+    margin-left: .2rem
+
+  .webpageicon
+    width: 3rem
+
+  .faqicon
+    dt,dd
+      background-repeat: no-repeat  
+      background-position: left top .5rem
+      padding-left: 3rem
+    dt
+      background-image: url(/assets/images/parts/FAQ_Q.png) 
+    dd
+      background-image: url(/assets/images/parts/FAQ_A.png) 
+
+  .tsv
+    width: 4.5rem
+    vertical-align: middle
+
+  .right-alignment
+    float: right
+    a
+      font-weight: normal
+
+  .life-size
+    width: auto
+
+  sup
+    vertical-align: super
+
+  .news_category
+    font-size: 80%
+    color: $COLOR_GRAY
+    span
+      display: block
+      padding-bottom: .3rem
+  .news_date
+    font-size: 80%
+    color: #333
+
+  .flow
+    color: #000000 
+    list-style: none
+    overflow: hidden
+    padding: 1rem 0
+    border-radius: .4rem .4rem 0 0
+    margin: 0
+    li
+      color: #000000
+      display: block
+      float: left
+      font-size: 1.3rem
+      min-width: 10rem
+      border-bottom: .1rem solid #bbb
+      border-top: .1rem solid #bbb
+      text-decoration: none
+      text-align: center
+      margin: 0
+      &:before
+        content: " "
+        border-right: .1rem solid #bbb
+        border-top: .1rem solid #bbb
+        float: right
+        height: 3.1rem
+        transform: skew(30deg)
+        width: 3rem
+      &:after
+        content: " "
+        display: block
+        border-bottom: .1rem solid #bbb
+        border-right: .1rem solid #bbb
+        width: 3rem
+        height: 3.1rem
+        position: relative
+        transform: skew(-30deg)
+      &:first-child
+        background: linear-gradient(#FEFEFE, #F3F5F5)
+        border-left: .1rem solid #bbb
+        padding-left: 1rem
+        &::before
+          background: linear-gradient(#FEFEFE, #F9FAFA)
+          margin: -.1rem -3rem -3rem auto
+        &:after
+          background: linear-gradient(#F9FAFA, #F4F6F6)
+          margin: -3rem -3rem -.1rem auto
+      &:nth-child(2)
+        background: linear-gradient(#e5e9e9, #f1f1f1)
+        text-align: center
+        &:before
+          background: linear-gradient(#f1f1f1, #ebeeee)
+          margin: -.1rem -3rem -3rem auto
+        &:after
+          background: linear-gradient(#ebeeee, #e6ebeb)
+          margin: -3rem -3rem -.1rem auto
+      &:last-child
+        background: linear-gradient(#e5e5e5, #d7dede)
+        line-height: 2rem
+        padding: 1rem 1rem 0 4rem
+        &::before
+          background: linear-gradient(#e5e5e5, #dde3e3)
+          display: block
+          margin: -1.1rem -3rem -3rem auto
+        &::after
+          background: linear-gradient(#dde3e3, #d8dfdf)
+          content: " "
+          margin: -2rem -3rem -.1rem auto
+  .flow_ja
+    li
+      &:first-child
+        line-height: 6rem
+        padding: 0 1rem 0 4rem
+        text-align: center
+      &:nth-child(2)
+        line-height: 6rem
+        padding: 0 1rem 0 4rem
+        &:before
+          margin: -.1rem -3rem -3rem auto
+        &:after
+          margin: -3rem -3rem -.1rem auto
+  .flow_en
+    li
+      &:first-child
+        line-height: 2rem
+        padding: 1rem 1rem 0 4rem
+        text-align: left
+        &:before
+          margin: -1.1rem -3rem -3rem auto
+        &:after
+          margin: -2rem -3rem -.1rem auto
+      &:nth-child(2)
+        line-height: 2rem
+        padding: 1rem 1rem 0 4rem
+        &:after
+          margin: -2rem -3rem -.1rem auto
+  .ja
+    li
+      &:first-child
+        &:before
+          margin: -.1rem -3rem -3rem auto
+        &:after
+          margin: -3rem -3rem -.1rem auto
+  .en
+    li
+      &:first-child
+        &:before
+          margin: -1.1rem -3rem -3rem auto
+        &:after
+          margin: -2rem -3rem -.1rem auto
+
+  .flow_en li:nth-child(2)::before
+    margin: -1.1rem -3rem -3rem auto
+    
+  #page_main 
+    #biosample_attr_area 
+      .name a
+        &:link, &:visited, &:hover
+          color: #000000
+
+  #biosample_attr_area
+    table#biosample_attr_table
+    padding: .2rem 0 0 0
+    border-collapse: collapse
+    background: white
+
+  #biosample_attr_area 
+    table
+      &#biosample_attr_table
+        thead 
+          tr
+          line-height: 1.4
+          background: #ddd
+          color: #666
+          &:honer
+          background: #FBEBD3
+          th
+            border-top: none
+            border-bottom: none
+            border-left: none
+            border-right: .1rem solid #CCCCCC
+            padding: .2rem .4rem
+            text-align: left
+            vertical-align: top
+        tbody
+          border: 0
+          tr
+            border-bottom: .1rem solid #ddd
+            border-left: .1rem solid #ddd
+            td
+              border: .1rem solid #ccc
+              padding: .2rem .4rem
+              text-align: left
+              vertical-align: top
+      td.name
+        white-space: nowrap
+
+  #sample_type > ul > li > ul, #env_package
+    display: none
+
+  #main_index.biosample_attr
+    .radio
+      float: left
+      margin-right: .3rem
+    in.prem
+      vertical-align: middle
+      margin-bottom: .3rem
+    .radio.requi.rrem
+      outline: .1rem solid #FF0000
+
+  #page_main 
+    .biosample_attr
+      a
+        &:visited
+          color: #039
+        &:hover
+          color: #039
+          text-decoration: underline
+
+  #main_index.biosample_attr
+    ul
+    list-style: none
+
+  #sample_type, #env_package
+    border: .1rem solid #999999
+    padding: .5rem 1rem
+    width: 45rem
+    border-radius: .5rem
+
+  #sample_type
+    margin-top: .5rem
+    margin-bottom: 1.5rem
+
+  #main_index.biosample_attr
+    ul
+      margin-bottom: 0
+      li
+        margin-bottom: .2rem
+    > ul > li
+      margin-top: .5rem
+      > ul > li:last-child
+        margin-bottom: .5rem
+
+  #page_main 
+    #main_index.biosample_attr 
+      a.title
+      font-weight: bold
+
+  #main_index.biosample_attr 
+    label
+    color: #000000
+    font-size: 90%
+
+  /* 幅を調整 */
+
+  #biosample_attr_area 
+    table#biosample_attr_table
+    .description
+      word-wrap: break-word
+    .value
+      word-wrap: break-word
+      width: 15%
+
+  #rule .rule-level, .rule-level
+    margin-left: 5px
+    margin-right: 5px
+    font-weight: normal
+  #rule .rule-level.warning, .rule-level.WAR, .rule-level.MES
+    color: #ff880e
+  #rule .rule-level.error, .rule-level.ER1, .rule-level.ER2, .rule-level.FAT
+    color: #cd2026
+
+  #main_index.biosample_attr
+    .radio.required
+      outline: 1px solid #FF0000
+

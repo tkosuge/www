@@ -1,0 +1,15 @@
+@mixin inner
+  margin: 0 auto
+  max-width: $WIDTH_MAX
+  &.-stretched
+    max-width: 100%
+
+@mixin inner-sp
+  width: auto
+  padding: 1rem $PADDING_SP_SIDE
+
+@mixin anchor
+  color: $COLOR_BLACK
+  transition: color $DURATION_GUI
+  &:active, &:hover
+    color: $COLOR_KEY

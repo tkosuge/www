@@ -1,0 +1,36 @@
+---
+layout: children
+title: FAQ
+lang: en
+---
+<div id="NavigationAndMainView">
+  <div class="inner">
+    <nav class="subview">
+      <nav class="facet-search">
+        <h2 class="title">Tags</h2>
+        <ul class="tags" data-tab="tag"></ul>
+      </nav>
+    </nav>
+
+    <main class="mainview">
+      <ul class="tagging-list-view">
+        {% assign faqs = site.faq | where: "lang", page.lang | where: "layout", "simple" %}
+        {% for faq in faqs %}
+          <li class="tagging-item-view taggingitem" data-tags="{{ faq.tags | join: ',' }},{{ faq.db | join: ',' }}">
+            <div class="upper">
+              <h2 class="title">
+                <a href="{{ faq.url }}">{{ faq.title }}</a>
+              </h2>
+              {% include tags.html lang=page.lang date=faq.date tags=faq.tags dbs=faq.db %}
+            </div>
+            <div class="bottom -collapsed md-content">
+              <div class="collapsedbutton"></div>
+              {{ faq.content }}
+            </div>
+          </li>
+        {% endfor %}
+      
+      </ul>
+    </main>
+  </div>
+</div>

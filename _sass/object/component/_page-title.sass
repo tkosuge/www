@@ -1,0 +1,31 @@
+.page-title
+  position: relative
+  > .title
+    margin-bottom: .3rem
+    font-size: $FONT_SIZE_H1
+    line-height: 1
+    font-weight: lighter
+    &.-normal
+      font-weight: normal
+  &.-small
+    > .title
+      font-size: $FONT_SIZE_H1_SMALL
+      font-weight: bold
+  > .tag-list-view
+    margin-bottom: .6rem
+  > .search-box
+    position: absolute
+    top: 0
+    right: 0
+
+@media screen and (max-width: $WIDTH_SP)
+  .page-title
+    padding: 1rem 0
+    > .title
+      font-size: $FONT_SIZE_SP_H1
+    &.-small
+      > .title
+        font-size: $FONT_SIZE_SP_H1_SMALL
+    > .search-box
+      position: relative
+      margin-bottom: .8rem

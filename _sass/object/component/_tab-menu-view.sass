@@ -1,0 +1,83 @@
+.tab-menu-view
+  font-size: 1.6rem
+  line-height: 1
+  > .tabmenucontainer
+    border-bottom: solid .1rem $COLOR_BLACK
+    display: flex
+    justify-content: flex-start
+    > li
+      margin-bottom: -.1rem
+      background-color: $COLOR_BEIGE
+      position: relative
+      border-bottom: solid .1rem $COLOR_BLACK
+      border-right: solid .1rem white
+      > a
+        margin-bottom: .1rem
+        top: .1rem
+        text-decoration: none
+        display: block
+        padding: .6rem 1rem
+        position: relative
+        cursor: pointer
+        transition: background $DURATION_GUI, color $DURATION_GUI
+      &:hover
+        background-color: $COLOR_HOVER
+        > ul
+          opacity: 1
+          pointer-events: auto
+          transform: translateY(0)
+      &.-current
+        background-color: white
+        border-top: solid .1rem $COLOR_BLACK
+        border-bottom: solid .1rem white
+        border-left: solid .1rem $COLOR_BLACK
+        border-right: solid .1rem $COLOR_BLACK
+        > a
+          color: $COLOR_BLACK
+      &.-haschild
+        > a
+          &::after
+            content: ""
+            display: inline-block
+            border-right: .4rem solid transparent
+            border-top: .5rem solid $COLOR_BLACK
+            border-left: .4rem solid transparent
+            margin: 0 0 .2rem .5rem
+            transition: border $DURATION_GUI
+      > ul
+        position: absolute
+        background-color: white
+        box-shadow: $SHADOW_DEPTH2
+        transition: transform $DURATION_GUI, opacity $DURATION_GUI
+        opacity: 0
+        pointer-events: none
+        transform: translateY(-1rem)
+        white-space: nowrap
+        z-index: $Z_TAB_MENU
+        > li
+          > a
+            display: block
+            font-size: 1.4rem
+            line-height: 2.9rem
+            text-decoration: none
+            padding: 0 1rem
+            color: $COLOR_BLACK
+            transition: background-color $DURATION_GUI
+          &:hover
+            > a
+              background-color: $COLOR_HOVER
+              color: $COLOR_KEY
+          + li
+            border-top: solid .1rem $COLOR_LIGHT_GRAY
+  > .tabbedcontent
+    display: none
+    &.-current
+      display: block
+
+@media screen and (max-width: $WIDTH_SP)
+  .tab-menu-view
+    font-size: 1.2rem
+    > .tabmenucontainer
+      display: flex
+      > li
+        display: block

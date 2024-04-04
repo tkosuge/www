@@ -1,0 +1,52 @@
+
+#NavigationAndMainView
+  border-bottom: .3rem solid $COLOR_BROWN
+  background-color: white
+  > .inner
+    +inner
+    display: flex
+    > .subview
+      width: calc( (100vw - #{$WIDTH_MAX}) + #{$WIDTH_NAV_AND_MAIN_SUBVIEW} )
+      min-width: $WIDTH_NAV_AND_MAIN_SUBVIEW
+      max-width: $WIDTH_NAV_AND_MAIN_SUBVIEW
+      > *
+        margin-left: auto
+        padding-bottom: 2rem
+        width: $WIDTH_NAV_AND_MAIN_SUBVIEW
+        height: 100vh
+        position: sticky
+        overflow-y: auto
+        top: 0
+      > .facet-search
+        padding-bottom: 0      
+    > .mainview
+      width: calc( (100vw - #{$WIDTH_MAX}) + (#{$WIDTH_MAX} - #{$WIDTH_NAV_AND_MAIN_SUBVIEW}) )
+      > *
+        max-width: calc(#{$WIDTH_MAX} - #{$WIDTH_NAV_AND_MAIN_SUBVIEW})
+        padding-right: $PADDING_BASE
+  &.-hidetoc
+    > .inner
+      > .subview
+        min-width: 1.6rem
+        max-width: 1.6rem
+        pointer-events: none
+
+@media screen and (max-width: $WIDTH_SP)
+  #NavigationAndMainView
+    > .inner
+      +inner-sp
+      display: block
+      > .subview, > .mainview
+        width: 100%
+      > .subview
+        min-width: inherit
+        max-width: inherit
+        > *
+          width: 100%
+          height: auto
+          position: static
+      > .mainview
+        > *
+          width: 100%
+          max-width: inherit
+          padding-right: 0

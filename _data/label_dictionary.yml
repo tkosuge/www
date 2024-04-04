@@ -1,0 +1,140 @@
+agd:
+  short:
+    en: AGD
+    ja: AGD
+  full:
+    en: AMED Genome Group Sharing Database (AGD)
+    ja: AMED Genome Group Sharing Database (AGD)
+arsa:
+  short:
+    en: ARSA
+    ja: ARSA
+  full:
+    en: ARSA
+    ja: ARSA
+bioproject:
+  short:
+    en: BioProject
+    ja: BioProject
+  full:
+    en: BioProject
+    ja: BioProject
+biosample:
+  short:
+    en: BioSample
+    ja: BioSample
+  full:
+    en: BioSample
+    ja: BioSample
+blast:
+  short:
+    en: BLAST
+    ja: BLAST
+  full:
+    en: BLAST
+    ja: BLAST
+clustalw:
+  short:
+    en: ClustalW
+    ja: ClustalW
+  full:
+    en: ClustalW
+    ja: ClustalW
+ddbj:
+  short:
+    en: DDBJ
+    ja: DDBJ
+  full:
+    en: Annotated/Assembled Sequences (DDBJ)
+    ja: Annotated/Assembled Sequences (DDBJ)
+dta:
+  short:
+    en: DTA
+    ja: DTA
+  full:
+    en: DDBJ Trace Archive (DTA)
+    ja: DDBJ Trace Archive (DTA)
+dra:
+  short:
+    en: DRA
+    ja: DRA
+  full:
+    en: Sequence Read Archive (DRA)
+    ja: Sequence Read Archive (DRA)
+jvar:
+  short:
+    en: JVar
+    ja: JVar
+  full:
+    en: Japan Variation Database (JVar)
+    ja: Japan Variation Database (JVar)
+ftp:
+  short:
+    en: FTP
+    ja: FTP
+  full:
+    en: FTP
+    ja: FTP
+gea:
+  short:
+    en: GEA
+    ja: GEA
+  full:
+    en: Genomic Expression Archive (GEA)
+    ja: Genomic Expression Archive (GEA)
+getentry:
+  short:
+    en: getentry
+    ja: getentry
+  full:
+    en: getentry
+    ja: getentry
+jga:
+  short:
+    en: JGA
+    ja: JGA
+  full:
+    en: Japanese Genotype-phenotype Archive (JGA)
+    ja: Japanese Genotype-phenotype Archive (JGA)
+metabobank:
+  short:
+    en: MetaboBank
+    ja: MetaboBank
+  full:
+    en: MetaboBank
+    ja: MetaboBank
+pipeline:
+  short:
+    en: Pipeline
+    ja: Pipeline
+  full:
+    en: Pipeline
+    ja: Pipeline
+top:
+  short:
+    en: DDBJ Center
+    ja: DDBJ Center
+  full:
+    en: DDBJ Center
+    ja: DDBJ Center
+
+
+category:
+  faq:
+    en: FAQ
+    ja: よくある質問
+  news:
+    en: News
+    ja: ニュース
+  about:
+    en: about
+    ja: about
+  activities:
+    en: activities
+    ja: 活動
+  services:
+    en: services
+    ja: サービス
+  statistics:
+    en: statistics
+    ja: 統計

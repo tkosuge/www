@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">{{ page.title }}</h1>
+
+      {% if page.collection == 'faq' or page.collection == 'news' %}
+        {% include tags.html lang=page.lang date=page.date tags=page.tags dbs=page.db %}
+      {% endif %}
+
+      {% include breadcrumb.html lang=page.lang %}
+
+    </div>
+    
+    {% include tab-menu.html %}
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      {{ content }}
+    </article>
+  </div>
+</main>

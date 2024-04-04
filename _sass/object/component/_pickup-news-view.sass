@@ -1,0 +1,53 @@
+$PADDING: 1.6rem
+.pickup-news-view
+  padding-top: 3rem
+  > .container
+    background-color: white
+    box-shadow: $SHADOW_DEPTH2
+    position: relative
+    > .title
+      padding: 0 $PADDING
+      height: 3.8rem
+      line-height: 3.8rem
+      font-size: 1.6rem
+      color: white
+      background: linear-gradient(90deg, $COLOR_KEY 0%, $COLOR_KEY_STRONG 100%)
+      [data-category="sc"] &
+        background: linear-gradient(90deg, $COLOR_SC_KEY 0%, $COLOR_SC_KEY_STRONG 100%)
+    > .list
+      list-style: none
+      > .item
+        > .news
+          transition: background-color $DURATION_GUI
+          &:hover
+            background-color: rgba($COLOR_KEY_LIGHT, .15)
+          > a
+            padding: 1rem $PADDING
+            display: block
+            border-bottom: solid 1px $COLOR_SEPARATOR
+            text-decoration: none
+            > .title
+              font-size: 1.4rem
+              font-weight: bold
+              line-height: 1.3
+              color: $COLOR_BLACK
+              margin-bottom: .4rem
+          &.priority
+            > a
+              background-color: $COLOR_TOP_NEWS
+    > .arrowed-link
+      padding: 0 $PADDING
+      font-size: 1.4rem
+      line-height: 4rem
+      display: block
+      text-align: right
+      &:hover
+        background-color: $COLOR_HOVER
+
+@media screen and (max-width: $WIDTH_SP)
+  .pickup-news-view
+    padding: 0 2rem
+    > .container
+      top: 0
+
+

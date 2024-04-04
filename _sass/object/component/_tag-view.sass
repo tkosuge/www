@@ -1,0 +1,35 @@
+.tag-view
+  font-size: 1rem
+  font-weight: bold
+  line-height: 1.6
+  background-color: $COLOR_KEY_MILD
+  color: $COLOR_BLACK
+  border-radius: .8em
+  padding: 0 .8em
+  position: relative
+  margin-bottom: .2rem
+  transition: background-color $DURATION_GUI
+  > .count
+    padding: 0 .4rem
+    font-size: .8rem
+    background-color: white
+    vertical-align: middle
+    display: inline-block
+    border-radius: 1.1em
+    text-align: center
+    min-width: 2em
+  &.-reverse
+    background-color: $COLOR_BROWN
+    color: white
+    > .count
+      color: $COLOR_BLACK
+  &.-disable
+    background-color: $COLOR_BEIGE
+    color: $COLOR_GRAY
+    > .count
+      color: $COLOR_GRAY
+  &:hover
+    &.-disable
+      background-color: $COLOR_HOVER
+      color: $COLOR_KEY
+

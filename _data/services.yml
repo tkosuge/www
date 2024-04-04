@@ -1,0 +1,491 @@
+items:
+  - name: getentry
+    formal_name: getentry
+    service_link:
+      en: http://getentry.ddbj.nig.ac.jp/top-e.html
+      ja: http://getentry.ddbj.nig.ac.jp/top-j.html
+    help:
+      en: getentry-e
+      ja: getentry
+    wabi: /services/getentry.html#ge_program
+    description:
+      en: DDBJ annotated/assembled data retrieval by accession numbers
+      ja: アクセッション番号などによる DDBJ annotated/assembled 塩基配列エントリの検索
+    target_data:
+      en: Annotated and assembled sequences
+      ja: アノテーション/アセンブルされた塩基配列
+    provider: DDBJ
+    tags:
+      - search
+
+  - name: ARSA
+    formal_name: All-round Retrieval of Sequence and Annotation
+    service_link:
+      en: http://ddbj.nig.ac.jp/arsa/
+      ja: http://ddbj.nig.ac.jp/arsa/
+    help:
+      en: arsa-e
+      ja: arsa
+    wabi: /services/arsa.html
+    description:
+      en: DDBJ annotated/assembled data retrieval by accession numbers and keywords
+      ja: 高速なキーワードによる DDBJ annotated/assembled 塩基配列エントリの検索
+    target_data:
+      en: Annotated and assembled sequences
+      ja: アノテーション/アセンブルされた塩基配列
+    provider: DDBJ
+    tags:
+      - search
+
+  - name: DDBJ Search
+    formal_name: DDBJ Search
+    service_link:
+      en: https://ddbj.nig.ac.jp/search
+      ja: https://ddbj.nig.ac.jp/search
+    description:
+      en: Search INSDC BioProject/BioSample/SRA and JGA data by accession numbers and keywords
+      ja: INSDC BioProject/BioSample/SRA, JGA データをアクセッション番号やキーワードで検索
+    target_data:
+      en: Raw sequencing data and alignment information
+      ja: 生シークエンスデータとアライメント情報
+    provider: DDBJ
+    tags:
+      - search
+
+  - name: TXSearch
+    formal_name: Taxonomy Search
+    service_link:
+      en: http://ddbj.nig.ac.jp/tx_search/?lang=en
+      ja: http://ddbj.nig.ac.jp/tx_search/?lang=ja
+    help:
+      en: txsearch-e
+      ja: txsearch
+    description:
+      en: Taxonomy database search
+      ja: 生物分類データベース検索
+    target_data:
+      en: Taxonomy
+      ja: 生物分類
+    provider: DDBJ
+    tags:
+      - search
+
+  - name: DFAST
+    formal_name: DDBJ Fast Annotation and Submission Tool
+    service_link:
+      en: https://dfast.ddbj.nig.ac.jp/
+      ja: https://dfast.ddbj.nig.ac.jp/
+    help:
+      en: https://dfast.ddbj.nig.ac.jp/help_annotation
+      ja: https://dfast.ddbj.nig.ac.jp/help_annotation
+    description:
+      en: DFAST is an automatic annotation service for prokaryotic genomes. DFAST generates <a href="https://www.ddbj.nig.ac.jp/ddbj/file-format.html#annotation">an annotation file submittable</a> to DDBJ.
+      ja: 原核生物ゲノムの高速自動アノテーションパイプライン。<a href="https://www.ddbj.nig.ac.jp/ddbj/file-format.html#annotation">DDBJ に登録可能なアノテーションファイル</a>を出力します。
+    target_data:
+      en: Prokaryotic genome
+      ja: 原核生物ゲノム
+    provider: DDBJ
+    tags:
+      - analysis
+      - submission
+      - annotation
+
+  - name: VecScreen
+    formal_name: VecScreen
+    service_link:
+      en: http://ddbj.nig.ac.jp/vecscreen/
+      ja: http://ddbj.nig.ac.jp/vecscreen/vecscreen?lang=ja
+    help:
+      en: vecscreen-e
+      ja: vecscreen
+    wabi: /services/wabi-vecscreen.html
+    description:
+      en: Vector search to screen contamination in nucleic acid sequences.
+      ja: ベクター配列データベースを対象にした相同性検索サービス
+    target_data:
+      en: Vector sequences
+      ja: ベクター配列
+    provider: DDBJ
+    tags:
+      - analysis
+
+  - name: MAFFT
+    formal_name: Multiple Alignment using Fast Fourier Transform
+    service_link:
+      en: wabi-mafft-e
+      ja: wabi-mafft
+    help:
+      en: wabi-mafft-e
+      ja: wabi-mafft
+    wabi: /services/wabi-mafft.html
+    description:
+      en: Fast multiple alignment tool for nucleotide and amino acid sequences.
+      ja: 高速・高精度な核酸・アミノ酸配列のマルチプルアラインメントツール
+    provider: DDBJ
+    tags:
+      - analysis
+
+  - name: WABI
+    formal_name: Web API for Biology
+    service_link:
+      en: wabi-e
+      ja: wabi
+    help:
+      en: wabi-e
+      ja: wabi
+    description:
+      en: WABI is a web API for using the search services of the DDBJ without needing to navigate the web front-end
+      ja: 検索サービス を Web 画面を介せずに利用できる Web API
+    provider: DDBJ
+    tags:
+      - search
+      - analysis
+
+  - name: AOE
+    formal_name: All Of gene Expression
+    service_link:
+      en: https://aoe.dbcls.jp/en
+      ja: https://aoe.dbcls.jp
+    description:
+      en: Statistics and trends of gene expression data
+      ja: 公共遺伝子発現データベースの目次
+    target_data:
+      en: Gene expression data
+      ja: 遺伝子発現データ
+    provider: DBCLS
+    tags:
+      - search
+
+  - name: CRISPRdirect
+    formal_name: CRISPRdirect
+    service_link:
+      en: https://crispr.dbcls.jp/
+      ja: https://crispr.dbcls.jp/
+    description:
+      en: Designing CRISPR/Cas9 guide RNA with reduced off-target sites
+      ja: CRISPR/Cas9 システムのガイド RNA を設計することができるツール
+    provider: DBCLS
+    tags:
+      - search
+
+  - name: DBCLS SRA
+    formal_name: DBCLS SRA
+    service_link:
+      en: http://sra.dbcls.jp/
+      ja: http://sra.dbcls.jp/
+    description:
+      en: Statistics and trends of SRA data
+      ja: 公共次世代シーケンスデータの統計情報と検索機能を提供するサービス
+    provider: DBCLS
+    target_data:
+      en: Raw sequencing data and alignment information
+      ja: 生シークエンスデータとアライメント情報
+    tags:
+      - search
+
+  - name: Gendoo
+    formal_name: Gendoo
+    service_link:
+      en: http://gendoo.dbcls.jp/
+      ja: http://gendoo.dbcls.jp/
+    description:
+      en: Functional profiling of gene and disease features for omics analysis
+      ja: 遺伝子、疾患について、関連する疾患、薬剤、臓器、生命現象などの特徴をキーワードでリスト表示するツール
+    provider: DBCLS
+    tags:
+      - search
+
+  - name: GGGenome
+    formal_name: GGGenome
+    service_link:
+      en: https://gggenome.dbcls.jp/en/
+      ja: https://gggenome.dbcls.jp/ja/
+    description:
+      en: A ultrafast sequence search
+      ja: 高速ゲノム配列検索ツール
+    provider: DBCLS
+    target_data:
+      en: Genome
+      ja: ゲノム
+    tags:
+      - search
+
+  - name: GGRNA
+    formal_name: GGRNA
+    service_link:
+      en: https://ggrna.dbcls.jp/en/
+      ja: https://ggrna.dbcls.jp/ja/
+    description:
+      en: A Google-like, ultrafast search engine for genes and transcripts
+      ja: 高速な遺伝子検索エンジン
+    provider: DBCLS
+    target_data:
+      en: Gene
+      ja: 遺伝子
+    tags:
+      - search
+
+  - name: RefEx
+    formal_name: RefEx
+    service_link:
+      en: http://refex.dbcls.jp/index.php?lang=en
+      ja: http://refex.dbcls.jp/index.php?lang=ja
+    description:
+      en: A web tool for a comfortable search of reference data for gene expression analysis
+      ja: 遺伝子発現解析の基準となる各遺伝子の遺伝子発現量を簡単に検索、閲覧できるウェブツール
+    provider: DBCLS
+    target_data:
+      en: Gene expression data
+      ja: 遺伝子発現データ
+    tags:
+      - search
+
+  - name: DDBJ
+    formal_name: DNA DataBank of Japan
+    service_link:
+      en: /ddbj/index-e.html
+      ja: /ddbj/index.html
+    description:
+      en: An annotated collection of genome, gene and transcript sequences.
+      ja: アノテーションが付与されたゲノム、遺伝子、転写産物の塩基配列
+    provider: DDBJ
+    target_data:
+      en: Annotated and assembled sequences
+      ja: アノテーション/アセンブルされた塩基配列
+    tags:
+      - database
+      - submission
+
+  - name: NSSS
+    formal_name: DDBJ Nucleotide Sequence Submission System
+    service_link:
+      en: /ddbj/web-submission-e.html
+      ja: /ddbj/web-submission.html
+    description:
+      en: Interactive nucleotide sequence submission system via web wizard
+      ja: ウェブフォームの塩基配列登録システム
+    provider: DDBJ
+    target_data:
+      en: Annotated and assembled sequences
+      ja: アノテーション/アセンブルされた塩基配列
+    tags:
+      - submission
+
+  - name: MSS
+    formal_name: Mass Submission System
+    service_link:
+      en: /ddbj/mss-e.html
+      ja: /ddbj/mss.html
+    description:
+      en: Submission of large-scale data such as WGS, complete genome and TSA.
+      ja: NSSS が対応していない多件数、長大な配列データの登録システム
+    provider: DDBJ
+    target_data:
+      en: Annotated and assembled sequences
+      ja: アノテーション/アセンブルされた塩基配列
+    tags:
+      - submission
+
+  - name: DRA
+    formal_name: DDBJ Sequence Read Archive
+    service_link:
+      en: /dra/index-e.html
+      ja: /dra/index.html
+    description:
+      en: DRA stores raw sequencing data and alignment information generated from high throughput sequencing platforms.
+      ja: DRA は高性能シークエンス機器からの生シークエンスデータとアライメント情報を格納しています。
+    provider: DDBJ
+    target_data:
+      en: Raw sequencing data and alignment information
+      ja: 生シークエンスデータとアライメント情報
+    tags:
+      - database
+      - submission
+
+  - name: GEA
+    formal_name: Genomic Expression Archive
+    service_link:
+      en: /gea/index-e.html
+      ja: /gea/index.html
+    description:
+      en: GEA is a public functional genomics data repository supporting MIAME-compliant data submissions. Array- and sequence-based data are accepted.
+      ja: GEA は MIAME に準拠したアレイとシークエンスベースの機能ゲノミクスデータを受付けています。
+    provider: DDBJ
+    target_data:
+      en: Functional genomics data
+      ja: 機能ゲノミクスデータ
+    tags:
+      - database
+      - submission
+
+  - name: BioProject
+    formal_name: Biological data related to a single project.
+    service_link:
+      en: /bioproject/index-e.html
+      ja: /bioproject/index.html
+    description:
+      en: A BioProject is a collection of biological data related to a single project. A BioProject record provides links to the diverse data types generated for that project.
+      ja: BioProject はプロジェクトに由来する生物学的データをとりまとめ、関連するデータへのリンクを提供します。
+    provider: DDBJ
+    target_data:
+      en: Biological data related to a single project
+      ja: プロジェクトに関連する生物学的データ
+    tags:
+      - database
+      - submission
+
+  - name: BioSample
+    formal_name: Biological source materials used in experimental assays
+    service_link:
+      en: /biosample/index-e.html
+      ja: /biosample/index.html
+    description:
+      en: The BioSample database contains descriptions of biological source materials used in experimental assays.
+      ja: BioSample は実験で使われた生物学的サンプルに関する情報を収集しています
+    provider: DDBJ
+    target_data:
+      en: Biological source materials used in experimental assays
+      ja: 実験で使われた生物学的サンプル
+    tags:
+      - database
+      - submission
+
+  - name: JGA
+    formal_name: Japanese Genotype-phenotype Archive
+    service_link:
+      en: /jga/index-e.html
+      ja: /jga/index.html
+    description:
+      en: JGA is a controlled-access database for sharing individual-level genotype and phenotype information.
+      ja: JGA は個人の遺伝型と表現型に関する情報を共有するためのアクセス制限データベースです
+    provider: DDBJ
+    target_data:
+      en: Genotype and phenotype of human individual
+      ja: ヒトの遺伝型と表現型
+    tags:
+      - database
+      - submission
+
+  - name: AGD
+    formal_name: AMED Genome group sharing Database
+    service_link:
+      en: /agd/index-e.html
+      ja: /agd/index.html
+    description:
+      en: AGD is a controlled-access database for sharing individual-level genotype and phenotype information among specific researchers.
+      ja: AGD は個人の遺伝型と表現型に関する情報を特定の研究者間で共有するためのアクセス制限データベースです
+    provider: DDBJ
+    target_data:
+      en: Genotype and phenotype of human individual
+      ja: ヒトの遺伝型と表現型
+    tags:
+      - database
+
+  - name: MetaboBank
+    formal_name: MetaboBank
+    service_link:
+      en: /metabobank/index-e.html
+      ja: /metabobank/index.html
+    description:
+      en: A public repository for metabolomics data.
+      ja: メタボロミクスデータの登録を受付ける公共リポジトリ。
+    provider: DDBJ
+    target_data:
+      en: metabolomics data
+      ja: メタボロミクスデータ
+    tags:
+      - database
+      - submission
+
+  - name: TogoVar
+    formal_name: TogoVar
+    service_link:
+      en: https://togovar.org/
+      ja: https://togovar.org/
+    description:
+      en: A database collects and organizes genome sequence differences between individuals (variants) in the Japanese population and disease information associated with.
+      ja: 日本人ゲノム配列の個人による違い（バリアント）とそれに関係する疾患情報などを収集・整理したデータベース
+    provider: DBCLS
+    target_data:
+      en: Human variants
+      ja: ヒトバリアント
+    tags:
+      - search
+
+  - name: NHA
+    formal_name: NBDC Human Data Archive
+    service_link:
+      en: https://humandbs.biosciencedbc.jp/en/
+      ja: https://humandbs.biosciencedbc.jp
+    description:
+      en: A platform for sharing various data generated from human specimens
+      ja: ヒトに関する様々なデータを共有するためのプラットフォーム
+    provider: NBDC
+    target_data:
+      en: Genotype and phenotype of human individual
+      ja: ヒトの遺伝型と表現型
+    tags:
+      - database
+
+  - name: TogoAnnotator
+    formal_name: TogoAnnotator
+    service_link:
+      en: http://togoannotator.dbcls.jp
+      ja: http://togoannotator.dbcls.jp
+    description:
+      en: This tool normalizes gene product names and assists with the curation task.
+      ja: 遺伝子産物名を標準化しキュレーションタスクを支援するツール
+    provider: DBCLS
+    target_data:
+      en: Gene product name
+      ja: 遺伝子産物名
+    tags:
+      - search
+
+  - name: JVar
+    formal_name: Japan Variation Database
+    service_link:
+      en: /jvar/index-e.html
+      ja: /jvar/index.html
+    description:
+      en: JVar archives human genome variations.
+      ja: ヒトゲノムバリアントのためのアーカイブ
+    provider: DDBJ
+    target_data:
+      en: Human genomic variants
+      ja: ヒトゲノムバリアント
+    tags:
+      - database
+      - submission
+
+  - name: DDBJ-LD
+    formal_name: DDBJ-LD
+    service_link:
+      en: https://ddbj.nig.ac.jp/public/rdf/
+      ja: https://ddbj.nig.ac.jp/public/rdf/
+    description:
+      en: Linked data of DDBJ Center
+      ja: DDBJ センターの linked data
+    provider: DDBJ
+    target_data:
+      en: RDF
+      ja: RDF
+    tags:
+      - database
+
+dictionary:
+  analysis:
+    en: Analysis
+    ja: 解析
+  annotation:
+    en: Annotation
+    ja: アノテーション
+  database:
+    en: Database
+    ja: データベース
+  search:
+    en: Search
+    ja: 検索
+  submission:
+    en: Submission
+    ja: 登録
